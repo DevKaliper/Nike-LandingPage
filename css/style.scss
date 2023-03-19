@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Bebas Neue", sans-serif;
+}
+
+body {
+	background: #fefdfd;
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	// background-color: green;
+	height: 80px;
+	padding: 35px 100px;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 55%;
+        backdrop-filter: blur(10px);
+        background: linear-gradient(#EFEFF1, #EFF0F2);
+        ;
+    }
+
+	.logo-Container {
+		width: 100px;
+		position: relative;
+		.logo {
+			width: 100%;
+		}
+	}
+
+	.header-actions {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		right: 50px;
+		gap: 15px;
+		ion-icon {
+			display: inline-block;
+			font-size: 1.5rem;
+			background-color: #8c011a;
+			padding: 10px;
+			border-radius: 50%;
+			color: white;
+		}
+		.menutoggle {
+			width: 50px;
+			height: 50px;
+			background-image: url("../img/menu.png");
+			background-size: 40px;
+			background-repeat: no-repeat;
+			background-position: center;
+			cursor: pointer;
+			filter: invert(1);
+		}
+	}
+}
+
+main {
+	.Shoe-Presentation {
+        
+		height: 100vh;
+		width: 100vw;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		padding: 5px 100px;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 55%;
+			backdrop-filter: blur(10px);
+			background: linear-gradient(#EFEFF1, #EFF0F2);
+			;
+		}
+        .logojordan{
+            position: absolute;
+            width: 30%;
+            top: -100px;
+            transform: translateX(16.6%);
+            img{
+                width: 100%;
+            }
+            
+        }
+
+		.Presentation-content {
+			z-index: 2;
+			width: 50%;
+			h2 {
+				position: relative;
+				top: -60px;
+				font-size: 4rem;
+				letter-spacing: 1.5px;
+				span {
+					color: #8c011a;
+				}
+			}
+			p {
+				font-size: 1.3rem;
+				line-height: 2rem;
+				letter-spacing: 1.3px;
+				z-index: 2;
+				span {
+					color: #8c011a;
+				}
+			}
+		}
+
+		.Presentation-shoe-container {
+			width: 50%;
+			position: relative;
+			height: 100%;
+
+			z-index: 1;
+
+			.Shoe-Presentation-img {
+				width: 120%;
+				position: absolute;
+				transform: rotate(-25deg);
+				top: 120px;
+				left: -180px;
+				object-fit: cover;
+				animation: floatingshoe 5s infinite ;
+                @keyframes floatingshoe{
+                    0% , 100%{
+                        
+                        transform: rotate(-25deg);
+                    }
+                    50%{
+                        transform: rotate(-20deg);
+                    }
+                }
+			}
+		}
+	}
+}
