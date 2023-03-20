@@ -9,42 +9,84 @@
 		<link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" />
 	</head>
 	<body>
-        
-        <header>
-            <div class="logo-Container">
-                <img src="./img/logo.png" alt="Logo" class="logo">
+		<header>
+			<div class="logo-Container">
+				<img src="./img/logo.png" alt="Logo" class="logo" />
+			</div>
+			<div class="header-actions">
+				<ion-icon name="cart-outline"></ion-icon>
+				<div class="menutoggle"></div>
+			</div>
+		</header>
 
-            </div>
-            <div class="header-actions">
-                <ion-icon name="cart-outline"></ion-icon>
-                <div class="menutoggle"></div>
-            </div>
+		<main>
+			<section class="Shoe-Presentation">
+				<div class="logojordan">
+					<img src="./img/logo jordan.png" alt="" />
+				</div>
+				<div class="Presentation-content">
+					<h2>Introducing the <span>Jordan Air 1</span></h2>
+					<p>
+						<span>The Air Jordan s1</span> were the first of their kind. First
+						released in 1985, this sneaker revolutionized the way
+						<span> The Air Jordan 1</span> was designed by Peter Moore and was
+						released in 1985. The release was tied to Michael Jordan’s rookie
+						season in the NBA. The design of <span>the Jordan 1</span> was
+						rather simple and consistent with the other basketball shoes of the
+						era. <span> The Jordan 1</span> lacked the sophisticated technology
+						that the Jordan Brand would be known for with later installments.
+						Nike was dedicated to giving Michael Jordan his own shoe and brand
+						to grow with.
+					</p>
+				</div>
+				<div class="Presentation-shoe-container">
+					<img
+						src="./img/Jordan Air.png"
+						alt=""
+						class="Shoe-Presentation-img"
+					/>
+				</div>
+			</section>
 
-        </header>
+			<section class="Shoe-Buy">
+				<h2 class="Shoe-Buy-Tittle">Adquiere tu sneaker ¡ahora!</h2>
 
-        <main>
-            <section class="Shoe-Presentation">
-                <div class="logojordan">
-                    <img src="./img/logo jordan.png" alt="" >
-                </div>
-                <div class="Presentation-content">
-                    <h2>Introducing the <span>Jordan Air 1</span></h2>
-                    <p><span>The Air Jordan s1</span> were the first of their kind. First released in 1985, this sneaker revolutionized the way  <span> The Air Jordan 1</span> was designed by Peter Moore and was released in 1985. The release was tied to Michael Jordan’s rookie season in the NBA. The design of  <span>the Jordan 1</span>  was rather simple and consistent with the other basketball shoes of the era.  <span> The Jordan 1</span> lacked the sophisticated technology that the Jordan Brand would be known for with later installments. Nike was dedicated to giving Michael Jordan his own shoe and brand to grow with.  </p>
-                </div>
-                <div class="Presentation-shoe-container">
-                    <img src="./img/Jordan Air.png" alt="" class="Shoe-Presentation-img">
-                </div>
-    
-            </section>
+				<div class="Shoe-Buy-card">
+					<div class="Shoe-Buy-initial">
+						<img onmouseover="changeShoeImg('./img/Jordan_air_najanjas.png')"src="./img/Jordan_air_najanjas.png" alt="" id="shoe-initial"/>
+					</div>
+					<div class="Shoe-Buy-Options">
+						<ul>
+                            <li onmouseover="changeShoeImg('./img/Jordan_air_najanjas.png');">
+                                <img src="./img/Jordan_air_najanjas.png" alt="" />
+                            </li>
+							<li onmouseover="changeShoeImg('./img/Jordan_air_rojas.png');">
+								<img src="./img/Jordan_air_rojas.png" alt="" />
+							</li>
+							<li onmouseover="changeShoeImg('./img/airmarillas.png');"><img src="./img/airmarillas.png" alt="" /></li>
+							<li onmouseover="changeShoeImg('./img/Airdoradoynegro.png');">
+								<img src="./img/Airdoradoynegro.png" alt="" />
+							</li>
+						</ul>
+					</div>
+					<div class="Shoe-Buy-size">
+						<ul>
+							<span> Size </span>
+							<li>7</li>
+							<li>8</li>
+							<li>9</li>
+							<li>10</li>
+						</ul>
+					</div>
 
-        </main>
+					<button class="Shoe-Buy-Now"><a href="#">Buy Now</a></button>
 
-
-
-
-
-
-
+					<div class="EspecialOffer">
+						<img src="./img/especialofer.png" alt="" />
+					</div>
+				</div>
+			</section>
+		</main>
 
 		<script src="./script.js"></script>
 		<script

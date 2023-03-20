@@ -11,7 +11,6 @@ body {
   position: relative;
   height: 100vh;
   width: 100vw;
-  overflow: hidden;
 }
 
 header {
@@ -30,7 +29,7 @@ header::before {
   width: 55%;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  background: linear-gradient(#EFEFF1, #EFF0F2);
+  background: linear-gradient(#efeff1, #eff0f2);
 }
 header .logo-Container {
   width: 100px;
@@ -84,7 +83,7 @@ main .Shoe-Presentation::before {
   width: 55%;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  background: linear-gradient(#EFEFF1, #EFF0F2);
+  background: linear-gradient(#efeff1, #eff0f2);
 }
 main .Shoe-Presentation .logojordan {
   position: absolute;
@@ -140,4 +139,127 @@ main .Shoe-Presentation .Presentation-shoe-container .Shoe-Presentation-img {
   50% {
     transform: rotate(-20deg);
   }
+}
+main .Shoe-Buy {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  padding: 80px 0px;
+  background-image: url("../img/logodriping.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 600px;
+  gap: 20px;
+}
+main .Shoe-Buy .Shoe-Buy-Tittle {
+  font-size: 4rem;
+  color: #F05423;
+}
+main .Shoe-Buy .Shoe-Buy-card {
+  width: 700px;
+  height: 750px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: rgba(225, 225, 225, 0.5);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3), 0 0 25px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+}
+main .Shoe-Buy .Shoe-Buy-card .EspecialOffer {
+  position: absolute;
+  width: 150px;
+  height: auto;
+  top: 0;
+  right: 20px;
+}
+main .Shoe-Buy .Shoe-Buy-card .EspecialOffer img {
+  width: 100%;
+}
+main .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-initial {
+  width: 100%;
+}
+main .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-initial img {
+  transition: 0.5s;
+  position: relative;
+  left: 20px;
+  width: 100%;
+}
+main .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-initial img:hover {
+  transform: rotate(-25deg);
+}
+main .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-Options {
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  top: -25px;
+  left: calc(-50% + 150px);
+}
+main .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-Options ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+main .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-Options ul li {
+  list-style: none;
+}
+main .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-Options ul li img {
+  transition: 0.5s;
+  background: rgba(225, 225, 225, 0.2);
+  border-radius: 15%;
+  width: 70%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+main .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-Options ul li img:hover {
+  transform: scale(1.1);
+}
+main .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-size ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  font-size: 2rem;
+}
+main .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-size ul span {
+  color: #F05423;
+}
+main .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-size ul li {
+  cursor: pointer;
+  transition: 0.5s;
+  position: relative;
+  background: #fefdfd;
+  color: #F05423;
+  padding: 3px 5px;
+  border-radius: 5px;
+  list-style: none;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+}
+main .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-size ul li:hover {
+  transform: translateY(-15px);
+}
+main .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-Now {
+  position: absolute;
+  bottom: -25px;
+  font-size: 2rem;
+  padding: 5px 15px;
+  border-radius: 20px;
+  border: none;
+  background: rgb(225, 225, 225);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3), 0 0 25px rgba(0, 0, 0, 0.1);
+}
+main .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-Now a {
+  transition: 0.5s ease;
+  text-decoration: none;
+  color: #F05423;
+}
+main .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-Now a:hover {
+  letter-spacing: 2px;
+  font-size: 2.5rem;
 }/*# sourceMappingURL=style.css.map */

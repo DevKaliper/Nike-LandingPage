@@ -11,7 +11,6 @@ body {
 	position: relative;
 	height: 100vh;
 	width: 100vw;
-	overflow: hidden;
 }
 header {
 	display: flex;
@@ -20,17 +19,16 @@ header {
 	// background-color: green;
 	height: 80px;
 	padding: 35px 100px;
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 55%;
-        backdrop-filter: blur(10px);
-        background: linear-gradient(#EFEFF1, #EFF0F2);
-        ;
-    }
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 55%;
+		backdrop-filter: blur(10px);
+		background: linear-gradient(#efeff1, #eff0f2);
+	}
 
 	.logo-Container {
 		width: 100px;
@@ -70,7 +68,6 @@ header {
 
 main {
 	.Shoe-Presentation {
-        
 		height: 100vh;
 		width: 100vw;
 		display: flex;
@@ -86,19 +83,17 @@ main {
 			height: 100%;
 			width: 55%;
 			backdrop-filter: blur(10px);
-			background: linear-gradient(#EFEFF1, #EFF0F2);
-			;
+			background: linear-gradient(#efeff1, #eff0f2);
 		}
-        .logojordan{
-            position: absolute;
-            width: 30%;
-            top: -100px;
-            transform: translateX(16.6%);
-            img{
-                width: 100%;
-            }
-            
-        }
+		.logojordan {
+			position: absolute;
+			width: 30%;
+			top: -100px;
+			transform: translateX(16.6%);
+			img {
+				width: 100%;
+			}
+		}
 
 		.Presentation-content {
 			z-index: 2;
@@ -137,16 +132,149 @@ main {
 				top: 120px;
 				left: -180px;
 				object-fit: cover;
-				animation: floatingshoe 5s infinite ;
-                @keyframes floatingshoe{
-                    0% , 100%{
-                        
-                        transform: rotate(-25deg);
-                    }
-                    50%{
-                        transform: rotate(-20deg);
-                    }
-                }
+				animation: floatingshoe 5s infinite;
+				@keyframes floatingshoe {
+					0%,
+					100% {
+						transform: rotate(-25deg);
+					}
+					50% {
+						transform: rotate(-20deg);
+					}
+				}
+			}
+		}
+	}
+	.Shoe-Buy {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		position: absolute;
+		padding: 80px 0px;
+		background-image: url("../img/logodriping.png");
+
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 600px;
+		gap: 20px;
+
+		.Shoe-Buy-Tittle {
+			font-size: 4rem;
+			color: #F05423;
+		}
+		.Shoe-Buy-card {
+			width: 700px;
+			height: 750px;
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			background: rgb(225, 225, 225, 0.5);
+			box-shadow: 0 0 15px rgb(0, 0, 0, 0.3), 0 0 25px rgb(0, 0, 0, 0.1);
+			border-radius: 30px;
+			.EspecialOffer {
+				position: absolute;
+				width: 150px;
+				height: auto;
+				top: 0;
+				right: 20px;
+				img {
+					width: 100%;
+				}
+			}
+			.Shoe-Buy-initial {
+				width: 100%;
+				img {
+					&:hover{
+						transform: rotate(-25deg);
+					}
+					transition: .5s;
+					position: relative;
+					left: 20px;
+
+					width: 100%;
+				}
+			}
+			.Shoe-Buy-Options {
+				width: 60%;
+				height: 100%;
+				position: absolute;
+				top: -25px;
+				left: calc(-50% + 150px);
+				ul {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					flex-direction: column;
+					gap: 5px;
+					li {
+						list-style: none;
+
+						img {
+							&:hover{
+								transform: scale(1.1);
+							}
+							transition: .5s;
+							background: rgb(225, 225, 225, 0.2);
+							border-radius: 15%;
+							width: 70%;
+							box-shadow: 0 0 15px rgb(0, 0, 0, 0.2);
+						}
+					}
+				}
+			}
+			.Shoe-Buy-size {
+				ul {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					gap: 25px;
+					font-size: 2rem;
+					span {
+						color: #F05423;
+					}
+					li {
+						cursor: pointer;
+						transition: .5s;
+						position: relative;
+						background: #fefdfd;
+						color: #F05423;
+						padding: 3px 5px;
+						border-radius: 5px;
+						list-style: none;
+						box-shadow: 0 0 25px rgb(0, 0, 0, 0.1);
+						&:hover{
+							transform: translateY(-15px);
+	
+						}
+					}
+				}
+			}
+			.Shoe-Buy-Now {
+				position: absolute;
+				bottom: -25px;
+				font-size: 2rem;
+				padding: 5px 15px;
+				border-radius: 20px;
+				
+				border: none;
+				background: rgb(225, 225, 225, 1);
+				box-shadow: 0 0 15px rgb(0, 0, 0, 0.3), 0 0 25px rgb(0, 0, 0, 0.1);
+				
+				a {
+					&:hover{
+						letter-spacing: 2px;
+						font-size: 2.5rem;
+					}
+					
+					transition: .5s ease;
+					text-decoration: none;
+					color: #F05423;
+				}
 			}
 		}
 	}
