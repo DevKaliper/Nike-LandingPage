@@ -49,7 +49,7 @@ header .header-actions {
 header .header-actions ion-icon {
   display: inline-block;
   font-size: 1.5rem;
-  background-color: #8c011a;
+  background-color: #FF802C;
   padding: 10px;
   border-radius: 50%;
   color: white;
@@ -85,6 +85,21 @@ main .Shoe-Presentation::before {
           backdrop-filter: blur(10px);
   background: linear-gradient(#efeff1, #eff0f2);
 }
+main .Shoe-Presentation::after {
+  content: "JUST DO IT";
+  position: absolute;
+  right: 0;
+  top: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 45%;
+  height: 50%;
+  font-size: 20rem;
+  z-index: -1;
+  opacity: 0.1;
+}
 main .Shoe-Presentation .logojordan {
   position: absolute;
   width: 30%;
@@ -105,7 +120,7 @@ main .Shoe-Presentation .Presentation-content h2 {
   letter-spacing: 1.5px;
 }
 main .Shoe-Presentation .Presentation-content h2 span {
-  color: #8c011a;
+  color: #FF802C;
 }
 main .Shoe-Presentation .Presentation-content p {
   font-size: 1.3rem;
@@ -114,7 +129,7 @@ main .Shoe-Presentation .Presentation-content p {
   z-index: 2;
 }
 main .Shoe-Presentation .Presentation-content p span {
-  color: #8c011a;
+  color: #FF802C;
 }
 main .Shoe-Presentation .Presentation-shoe-container {
   width: 50%;
@@ -130,15 +145,6 @@ main .Shoe-Presentation .Presentation-shoe-container .Shoe-Presentation-img {
   left: -180px;
   -o-object-fit: cover;
      object-fit: cover;
-  animation: floatingshoe 5s infinite;
-}
-@keyframes floatingshoe {
-  0%, 100% {
-    transform: rotate(-25deg);
-  }
-  50% {
-    transform: rotate(-20deg);
-  }
 }
 main .Shoe-Buy {
   width: 100%;
@@ -157,7 +163,7 @@ main .Shoe-Buy {
 }
 main .Shoe-Buy .Shoe-Buy-Tittle {
   font-size: 4rem;
-  color: #F05423;
+  color: #FF802C;
 }
 main .Shoe-Buy .Shoe-Buy-card {
   width: 700px;

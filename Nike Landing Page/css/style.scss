@@ -48,7 +48,7 @@ header {
 		ion-icon {
 			display: inline-block;
 			font-size: 1.5rem;
-			background-color: #8c011a;
+			background-color: #FF802C;
 			padding: 10px;
 			border-radius: 50%;
 			color: white;
@@ -85,6 +85,22 @@ main {
 			backdrop-filter: blur(10px);
 			background: linear-gradient(#efeff1, #eff0f2);
 		}
+		&::after{
+			content: "JUST DO IT";
+			position: absolute;
+			right: 0;
+			top: 320px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			width: 45%;
+			height: 50%;
+			font-size: 20rem;
+			z-index: -1;
+			opacity: .1;
+			
+		}
 		.logojordan {
 			position: absolute;
 			width: 30%;
@@ -104,7 +120,7 @@ main {
 				font-size: 4rem;
 				letter-spacing: 1.5px;
 				span {
-					color: #8c011a;
+					color: #FF802C;
 				}
 			}
 			p {
@@ -113,7 +129,7 @@ main {
 				letter-spacing: 1.3px;
 				z-index: 2;
 				span {
-					color: #8c011a;
+					color: #FF802C;
 				}
 			}
 		}
@@ -132,16 +148,7 @@ main {
 				top: 120px;
 				left: -180px;
 				object-fit: cover;
-				animation: floatingshoe 5s infinite;
-				@keyframes floatingshoe {
-					0%,
-					100% {
-						transform: rotate(-25deg);
-					}
-					50% {
-						transform: rotate(-20deg);
-					}
-				}
+
 			}
 		}
 	}
@@ -163,7 +170,7 @@ main {
 
 		.Shoe-Buy-Tittle {
 			font-size: 4rem;
-			color: #F05423;
+			color: #FF802C;
 		}
 		.Shoe-Buy-card {
 			width: 700px;
