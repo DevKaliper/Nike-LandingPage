@@ -151,63 +151,76 @@ main .Kyrie-Presentation {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
-main .Kyrie-Presentation::before {
-  content: "";
+main .Kyrie-Presentation .Kyrie-ballingImgContainer {
+  position: absolute;
+  top: 20px;
+  right: 300px;
+  width: 250px;
+}
+main .Kyrie-Presentation .Kyrie-ballingImgContainer img {
+  width: 100%;
+}
+main .Kyrie-Presentation .Kyrie-imgContainer {
+  width: 55%;
+  height: 100%;
+  position: relative;
+}
+main .Kyrie-Presentation .Kyrie-imgContainer img {
   position: absolute;
   top: 0;
-  right: 0;
-  height: 100%;
-  width: 45%;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  z-index: -1;
-  background: linear-gradient(#efeff1, #eff0f2);
-}
-main .Kyrie-Presentation::after {
-  content: "JUST DO IT";
-  position: absolute;
   left: 0;
-  top: 200px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .Kyrie-Presentation .Kyrie-content {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  flex-direction: column;
   width: 45%;
-  height: 50%;
-  font-size: 20rem;
-  z-index: -1;
-  opacity: 0.1;
-}
-main .Kyrie-Presentation .Kyrie-content {
-  padding: 20px;
-  position: absolute;
-  right: 200px;
-  top: 300px;
+  height: 100%;
+  background: linear-gradient(#efeff1, #eff0f2);
 }
 main .Kyrie-Presentation .Kyrie-content .Kyrie-tittle {
-  font-size: 6rem;
-  background-image: linear-gradient(to left, black, #E92F3F);
+  font-size: 5rem;
+  position: relative;
+  top: 15px;
+  background-image: linear-gradient(to right, gray, black);
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
 }
-main .Kyrie-Presentation .Kyrie-imgContainer {
-  top: 0;
+main .Kyrie-Presentation .Kyrie-content .Kyrie-cities h3 {
+  font-size: 6rem;
+  background-image: linear-gradient(to right, #f8d057, #93D23B, #AF820D, #267EAC, #79ABA2, #DDAA99, #D579AA, #B5120A);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  text-shadow: 0 0 75px rgba(0, 0, 0, 0.4) 0 0 100px white;
+  letter-spacing: 1.5px;
   position: relative;
+  top: 45px;
 }
-main .Kyrie-Presentation .Kyrie-imgContainer img {
-  transform: scale(1.1) translateX(50px);
+main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  top: 60px;
 }
-main .Kyrie-Presentation .Kyrie-ballingImgContainer {
-  width: 300px;
-  position: absolute;
-  right: 250px;
-  top: 80px;
+main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list ul li {
+  list-style: none;
+  font-size: 3rem;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: 0.5s;
 }
-main .Kyrie-Presentation .Kyrie-ballingImgContainer img {
-  width: 100%;
+main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list ul li:hover {
+  letter-spacing: 15px;
 }
 main .Shoe-Buy {
   width: 100%;
