@@ -9,8 +9,6 @@
 body {
   background: #fefdfd;
   position: relative;
-  height: 100vh;
-  width: 100vw;
 }
 
 header {
@@ -19,6 +17,7 @@ header {
   align-items: center;
   height: 80px;
   padding: 35px 100px;
+  position: relative;
 }
 header::before {
   content: "";
@@ -49,7 +48,7 @@ header .header-actions {
 header .header-actions ion-icon {
   display: inline-block;
   font-size: 1.5rem;
-  background-color: #FF802C;
+  background-color: #ff802c;
   padding: 10px;
   border-radius: 50%;
   color: white;
@@ -120,7 +119,7 @@ main .Shoe-Presentation .Presentation-content h2 {
   letter-spacing: 1.5px;
 }
 main .Shoe-Presentation .Presentation-content h2 span {
-  color: #FF802C;
+  color: #ff802c;
 }
 main .Shoe-Presentation .Presentation-content p {
   font-size: 1.3rem;
@@ -129,7 +128,7 @@ main .Shoe-Presentation .Presentation-content p {
   z-index: 2;
 }
 main .Shoe-Presentation .Presentation-content p span {
-  color: #FF802C;
+  color: #ff802c;
 }
 main .Shoe-Presentation .Presentation-shoe-container {
   width: 50%;
@@ -145,6 +144,70 @@ main .Shoe-Presentation .Presentation-shoe-container .Shoe-Presentation-img {
   left: -180px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+main .Kyrie-Presentation {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .Kyrie-Presentation::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 45%;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  z-index: -1;
+  background: linear-gradient(#efeff1, #eff0f2);
+}
+main .Kyrie-Presentation::after {
+  content: "JUST DO IT";
+  position: absolute;
+  left: 0;
+  top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 45%;
+  height: 50%;
+  font-size: 20rem;
+  z-index: -1;
+  opacity: 0.1;
+}
+main .Kyrie-Presentation .Kyrie-content {
+  padding: 20px;
+  position: absolute;
+  right: 200px;
+  top: 300px;
+}
+main .Kyrie-Presentation .Kyrie-content .Kyrie-tittle {
+  font-size: 6rem;
+  background-image: linear-gradient(to left, black, #E92F3F);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+main .Kyrie-Presentation .Kyrie-imgContainer {
+  top: 0;
+  position: relative;
+}
+main .Kyrie-Presentation .Kyrie-imgContainer img {
+  transform: scale(1.1) translateX(50px);
+}
+main .Kyrie-Presentation .Kyrie-ballingImgContainer {
+  width: 300px;
+  position: absolute;
+  right: 250px;
+  top: 80px;
+}
+main .Kyrie-Presentation .Kyrie-ballingImgContainer img {
+  width: 100%;
 }
 main .Shoe-Buy {
   width: 100%;
@@ -163,7 +226,7 @@ main .Shoe-Buy {
 }
 main .Shoe-Buy .Shoe-Buy-Tittle {
   font-size: 4rem;
-  color: #FF802C;
+  color: #ff802c;
 }
 main .Shoe-Buy .Shoe-Buy-card {
   width: 700px;
@@ -234,14 +297,14 @@ main .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-size ul {
   font-size: 2rem;
 }
 main .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-size ul span {
-  color: #F05423;
+  color: #f05423;
 }
 main .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-size ul li {
   cursor: pointer;
   transition: 0.5s;
   position: relative;
   background: #fefdfd;
-  color: #F05423;
+  color: #f05423;
   padding: 3px 5px;
   border-radius: 5px;
   list-style: none;
@@ -263,7 +326,7 @@ main .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-Now {
 main .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-Now a {
   transition: 0.5s ease;
   text-decoration: none;
-  color: #F05423;
+  color: #f05423;
 }
 main .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-Now a:hover {
   letter-spacing: 2px;
