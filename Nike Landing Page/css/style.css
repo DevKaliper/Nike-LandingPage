@@ -334,7 +334,15 @@ main .Kyrie-Presentation .Kyrie-BallingFans-container a:hover {
   letter-spacing: 2.5px;
   font-size: 3.5rem;
 }
-main .Shoe-Buy {
+
+.Shoe-Buy-Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+.Shoe-Buy-Container .Shoe-Buy {
   width: 100%;
   height: 100%;
   display: flex;
@@ -349,11 +357,11 @@ main .Shoe-Buy {
   background-size: 600px;
   gap: 20px;
 }
-main .Shoe-Buy .Shoe-Buy-Tittle {
+.Shoe-Buy-Container .Shoe-Buy .Shoe-Buy-Tittle {
   font-size: 4rem;
   color: #ff802c;
 }
-main .Shoe-Buy .Shoe-Buy-card {
+.Shoe-Buy-Container .Shoe-Buy .Shoe-Buy-card {
   width: 700px;
   height: 750px;
   position: relative;
@@ -365,66 +373,66 @@ main .Shoe-Buy .Shoe-Buy-card {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3), 0 0 25px rgba(0, 0, 0, 0.1);
   border-radius: 30px;
 }
-main .Shoe-Buy .Shoe-Buy-card .EspecialOffer {
+.Shoe-Buy-Container .Shoe-Buy .Shoe-Buy-card .EspecialOffer {
   position: absolute;
   width: 150px;
   height: auto;
   top: 0;
   right: 20px;
 }
-main .Shoe-Buy .Shoe-Buy-card .EspecialOffer img {
+.Shoe-Buy-Container .Shoe-Buy .Shoe-Buy-card .EspecialOffer img {
   width: 100%;
 }
-main .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-initial {
+.Shoe-Buy-Container .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-initial {
   width: 100%;
 }
-main .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-initial img {
+.Shoe-Buy-Container .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-initial img {
   transition: 0.5s;
   position: relative;
   left: 20px;
   width: 100%;
 }
-main .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-initial img:hover {
+.Shoe-Buy-Container .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-initial img:hover {
   transform: rotate(-25deg);
 }
-main .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-Options {
+.Shoe-Buy-Container .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-Options {
   width: 60%;
   height: 100%;
   position: absolute;
   top: -25px;
   left: calc(-50% + 150px);
 }
-main .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-Options ul {
+.Shoe-Buy-Container .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-Options ul {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 5px;
 }
-main .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-Options ul li {
+.Shoe-Buy-Container .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-Options ul li {
   list-style: none;
 }
-main .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-Options ul li img {
+.Shoe-Buy-Container .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-Options ul li img {
   transition: 0.5s;
   background: rgba(225, 225, 225, 0.2);
   border-radius: 15%;
   width: 70%;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
-main .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-Options ul li img:hover {
+.Shoe-Buy-Container .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-Options ul li img:hover {
   transform: scale(1.1);
 }
-main .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-size ul {
+.Shoe-Buy-Container .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-size ul {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 25px;
   font-size: 2rem;
 }
-main .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-size ul span {
+.Shoe-Buy-Container .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-size ul span {
   color: #f05423;
 }
-main .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-size ul li {
+.Shoe-Buy-Container .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-size ul li {
   cursor: pointer;
   transition: 0.5s;
   position: relative;
@@ -435,10 +443,10 @@ main .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-size ul li {
   list-style: none;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
 }
-main .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-size ul li:hover {
+.Shoe-Buy-Container .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-size ul li:hover {
   transform: translateY(-15px);
 }
-main .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-Now {
+.Shoe-Buy-Container .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-Now {
   position: absolute;
   bottom: -25px;
   font-size: 2rem;
@@ -448,12 +456,12 @@ main .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-Now {
   background: rgb(225, 225, 225);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3), 0 0 25px rgba(0, 0, 0, 0.1);
 }
-main .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-Now a {
+.Shoe-Buy-Container .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-Now a {
   transition: 0.5s ease;
   text-decoration: none;
   color: #f05423;
 }
-main .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-Now a:hover {
+.Shoe-Buy-Container .Shoe-Buy .Shoe-Buy-card .Shoe-Buy-Now a:hover {
   letter-spacing: 2px;
   font-size: 2.5rem;
 }/*# sourceMappingURL=style.css.map */
