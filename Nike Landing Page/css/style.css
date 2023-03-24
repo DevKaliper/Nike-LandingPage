@@ -10,8 +10,7 @@ body {
   background: #fefdfd;
   position: relative;
 }
-
-header {
+body header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,7 +18,7 @@ header {
   padding: 35px 100px;
   position: relative;
 }
-header::before {
+body header::before {
   content: "";
   position: absolute;
   top: 0;
@@ -30,14 +29,14 @@ header::before {
           backdrop-filter: blur(10px);
   background: linear-gradient(#efeff1, #eff0f2);
 }
-header .logo-Container {
+body header .logo-Container {
   width: 100px;
   position: relative;
 }
-header .logo-Container .logo {
+body header .logo-Container .logo {
   width: 100%;
 }
-header .header-actions {
+body header .header-actions {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,7 +44,7 @@ header .header-actions {
   right: 50px;
   gap: 15px;
 }
-header .header-actions ion-icon {
+body header .header-actions ion-icon {
   display: inline-block;
   font-size: 1.5rem;
   background-color: #ff802c;
@@ -53,7 +52,7 @@ header .header-actions ion-icon {
   border-radius: 50%;
   color: white;
 }
-header .header-actions .menutoggle {
+body header .header-actions .menutoggle {
   width: 50px;
   height: 50px;
   background-image: url("../img/menu.png");
@@ -63,8 +62,7 @@ header .header-actions .menutoggle {
   cursor: pointer;
   filter: invert(1);
 }
-
-main .Shoe-Presentation {
+body main .Shoe-Presentation {
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -73,7 +71,7 @@ main .Shoe-Presentation {
   position: relative;
   padding: 5px 100px;
 }
-main .Shoe-Presentation::before {
+body main .Shoe-Presentation::before {
   content: "";
   position: absolute;
   top: 0;
@@ -84,7 +82,7 @@ main .Shoe-Presentation::before {
           backdrop-filter: blur(10px);
   background: linear-gradient(#efeff1, #eff0f2);
 }
-main .Shoe-Presentation::after {
+body main .Shoe-Presentation::after {
   content: "JUST DO IT";
   position: absolute;
   right: 0;
@@ -99,44 +97,44 @@ main .Shoe-Presentation::after {
   z-index: -1;
   opacity: 0.1;
 }
-main .Shoe-Presentation .logojordan {
+body main .Shoe-Presentation .logojordan {
   position: absolute;
   width: 30%;
   top: -100px;
   transform: translateX(16.6%);
 }
-main .Shoe-Presentation .logojordan img {
+body main .Shoe-Presentation .logojordan img {
   width: 100%;
 }
-main .Shoe-Presentation .Presentation-content {
+body main .Shoe-Presentation .Presentation-content {
   z-index: 2;
   width: 50%;
 }
-main .Shoe-Presentation .Presentation-content h2 {
+body main .Shoe-Presentation .Presentation-content h2 {
   position: relative;
   top: -60px;
   font-size: 4rem;
   letter-spacing: 1.5px;
 }
-main .Shoe-Presentation .Presentation-content h2 span {
+body main .Shoe-Presentation .Presentation-content h2 span {
   color: #ff802c;
 }
-main .Shoe-Presentation .Presentation-content p {
+body main .Shoe-Presentation .Presentation-content p {
   font-size: 1.3rem;
   line-height: 2rem;
   letter-spacing: 1.3px;
   z-index: 2;
 }
-main .Shoe-Presentation .Presentation-content p span {
+body main .Shoe-Presentation .Presentation-content p span {
   color: #ff802c;
 }
-main .Shoe-Presentation .Presentation-shoe-container {
+body main .Shoe-Presentation .Presentation-shoe-container {
   width: 50%;
   position: relative;
   height: 100%;
   z-index: 1;
 }
-main .Shoe-Presentation .Presentation-shoe-container .Shoe-Presentation-img {
+body main .Shoe-Presentation .Presentation-shoe-container .Shoe-Presentation-img {
   width: 120%;
   position: absolute;
   transform: rotate(-25deg);
@@ -145,7 +143,7 @@ main .Shoe-Presentation .Presentation-shoe-container .Shoe-Presentation-img {
   -o-object-fit: cover;
      object-fit: cover;
 }
-main .Shoe-Presentation .ShoePresentation-Buy-Now {
+body main .Shoe-Presentation .ShoePresentation-Buy-Now {
   z-index: 100;
   position: absolute;
   bottom: 250px;
@@ -157,16 +155,16 @@ main .Shoe-Presentation .ShoePresentation-Buy-Now {
   background: rgb(225, 225, 225);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3), 0 0 25px rgba(0, 0, 0, 0.1);
 }
-main .Shoe-Presentation .ShoePresentation-Buy-Now a {
+body main .Shoe-Presentation .ShoePresentation-Buy-Now a {
   transition: 0.5s ease;
   text-decoration: none;
   color: #f05423;
 }
-main .Shoe-Presentation .ShoePresentation-Buy-Now a:hover {
+body main .Shoe-Presentation .ShoePresentation-Buy-Now a:hover {
   letter-spacing: 2px;
   font-size: 2.5rem;
 }
-main .Kyrie-Presentation {
+body main .Kyrie-Presentation {
   width: 100vw;
   height: 100vh;
   position: relative;
@@ -174,21 +172,21 @@ main .Kyrie-Presentation {
   align-items: center;
   justify-content: flex-start;
 }
-main .Kyrie-Presentation .Kyrie-ballingImgContainer {
+body main .Kyrie-Presentation .Kyrie-ballingImgContainer {
   position: absolute;
   top: 20px;
   right: 300px;
   width: 250px;
 }
-main .Kyrie-Presentation .Kyrie-ballingImgContainer img {
+body main .Kyrie-Presentation .Kyrie-ballingImgContainer img {
   width: 100%;
 }
-main .Kyrie-Presentation .Kyrie-imgContainer {
+body main .Kyrie-Presentation .Kyrie-imgContainer {
   width: 55%;
   height: 100%;
   position: relative;
 }
-main .Kyrie-Presentation .Kyrie-imgContainer img {
+body main .Kyrie-Presentation .Kyrie-imgContainer img {
   position: absolute;
   top: 0;
   left: 0;
@@ -197,7 +195,7 @@ main .Kyrie-Presentation .Kyrie-imgContainer img {
   -o-object-fit: cover;
      object-fit: cover;
 }
-main .Kyrie-Presentation .Kyrie-content {
+body main .Kyrie-Presentation .Kyrie-content {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -206,7 +204,7 @@ main .Kyrie-Presentation .Kyrie-content {
   height: 100%;
   background: linear-gradient(#efeff1, #eff0f2);
 }
-main .Kyrie-Presentation .Kyrie-content .Kyrie-tittle {
+body main .Kyrie-Presentation .Kyrie-content .Kyrie-tittle {
   font-size: 5rem;
   position: relative;
   top: 15px;
@@ -215,9 +213,9 @@ main .Kyrie-Presentation .Kyrie-content .Kyrie-tittle {
           background-clip: text;
   color: transparent;
 }
-main .Kyrie-Presentation .Kyrie-content .Kyrie-cities h3 {
+body main .Kyrie-Presentation .Kyrie-content .Kyrie-cities h3 {
   font-size: 6rem;
-  background-image: linear-gradient(to right, #f8d057, #93D23B, #AF820D, #267EAC, #79ABA2, #DDAA99, #D579AA, #B5120A);
+  background-image: linear-gradient(to right, #f8d057, #93d23b, #af820d, #267eac, #79aba2, #ddaa99, #d579aa, #b5120a);
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
@@ -226,84 +224,84 @@ main .Kyrie-Presentation .Kyrie-content .Kyrie-cities h3 {
   position: relative;
   top: 45px;
 }
-main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list {
+body main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list {
   display: flex;
   align-items: center;
   justify-content: space-around;
   position: relative;
   top: 60px;
 }
-main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list ul #Beijin {
-  background-image: linear-gradient(to right, #DF9D08, #F2550C);
+body main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list ul #Beijin {
+  background-image: linear-gradient(to right, #df9d08, #f2550c);
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
 }
-main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list ul #Berlin {
-  background-image: linear-gradient(to right, #D780B3, #F43834);
+body main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list ul #Berlin {
+  background-image: linear-gradient(to right, #d780b3, #f43834);
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
 }
-main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list ul #Houston {
-  background-image: linear-gradient(to right, #BA1728, #53296F);
+body main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list ul #Houston {
+  background-image: linear-gradient(to right, #ba1728, #53296f);
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
 }
-main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list ul #Guangzhou {
-  background-image: linear-gradient(to right, #D8B732, #EC2517, #2B9AD3);
+body main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list ul #Guangzhou {
+  background-image: linear-gradient(to right, #d8b732, #ec2517, #2b9ad3);
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
 }
-main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list ul #Los-Angeles {
-  background-image: linear-gradient(to right, #DBAB9D, #37618B);
+body main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list ul #Los-Angeles {
+  background-image: linear-gradient(to right, #dbab9d, #37618b);
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
 }
-main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list ul #Manila {
-  background-image: linear-gradient(to right, #8CBCB8, #F93F12);
+body main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list ul #Manila {
+  background-image: linear-gradient(to right, #8cbcb8, #f93f12);
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
 }
-main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list ul #Miami {
-  background-image: linear-gradient(to right, #F5EC5F, #6BADC3, #A74178, #A74178);
+body main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list ul #Miami {
+  background-image: linear-gradient(to right, #f5ec5f, #6badc3, #a74178, #a74178);
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
 }
-main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list ul #New-York {
-  background-image: linear-gradient(to right, #2B81AD, #850B11, #76D733);
+body main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list ul #New-York {
+  background-image: linear-gradient(to right, #2b81ad, #850b11, #76d733);
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
 }
-main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list ul #Taipei {
-  background-image: linear-gradient(to right, #C19415, #1D2748, #C8BD00);
+body main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list ul #Taipei {
+  background-image: linear-gradient(to right, #c19415, #1d2748, #c8bd00);
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
 }
-main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list ul #Tokyo {
-  background-image: linear-gradient(to right, #9FD947, #E396B8, #095382);
+body main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list ul #Tokyo {
+  background-image: linear-gradient(to right, #9fd947, #e396b8, #095382);
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
 }
-main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list ul li {
+body main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list ul li {
   list-style: none;
   font-size: 3rem;
   letter-spacing: 1.5px;
   cursor: pointer;
   transition: 0.5s;
 }
-main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list ul li:hover {
+body main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list ul li:hover {
   letter-spacing: 15px;
 }
-main .Kyrie-Presentation .Kyrie-BallingFans-container {
+body main .Kyrie-Presentation .Kyrie-BallingFans-container {
   position: absolute;
   bottom: 20px;
   height: -moz-fit-content;
@@ -319,20 +317,118 @@ main .Kyrie-Presentation .Kyrie-BallingFans-container {
   justify-content: center;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
-main .Kyrie-Presentation .Kyrie-BallingFans-container a {
+body main .Kyrie-Presentation .Kyrie-BallingFans-container a {
   font-size: 3rem;
   text-decoration: none;
-  color: #A09D98;
+  color: #a09d98;
   letter-spacing: 2px;
-  background-image: linear-gradient(to right, #f8d057, #93D23B, #AF820D, #267EAC, #79ABA2, #DDAA99, #D579AA, #B5120A);
+  background-image: linear-gradient(to right, #f8d057, #93d23b, #af820d, #267eac, #79aba2, #ddaa99, #d579aa, #b5120a);
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
   transition: 0.5s ease;
 }
-main .Kyrie-Presentation .Kyrie-BallingFans-container a:hover {
+body main .Kyrie-Presentation .Kyrie-BallingFans-container a:hover {
   letter-spacing: 2.5px;
   font-size: 3.5rem;
+}
+body footer {
+  height: auto;
+  max-width: 100vw;
+  background-color: #111;
+}
+body footer li {
+  cursor: pointer;
+}
+body footer .footer-text-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+body footer .footer-text-container .footer-text-div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px;
+  gap: 50px;
+}
+body footer .footer-text-container .footer-text-div span {
+  color: white;
+}
+body footer .footer-text-container .footer-text-div .Acciones-footer li {
+  list-style: none;
+  text-transform: uppercase;
+  color: white;
+  margin-top: 15px;
+}
+body footer .footer-text-container .footer-text-div .Help-footer li {
+  list-style: none;
+  margin-top: 15px;
+  color: gray;
+}
+body footer .footer-text-container .footer-text-div .Help-footer li:hover {
+  color: #fff;
+}
+body footer .footer-text-container .footer-text-div .about-footer li {
+  list-style: none;
+  margin-top: 15px;
+  color: gray;
+}
+body footer .footer-text-container .footer-text-div .about-footer li:hover {
+  color: #fff;
+}
+body footer .footer-text-container .sci-footer ul {
+  display: flex;
+  justify-content: center;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  top: 40px;
+  right: 15px;
+}
+body footer .footer-text-container .sci-footer ul li {
+  color: gray;
+  list-style: none;
+  font-size: 2.3rem;
+  margin-right: 20px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+body footer .footer-text-container .sci-footer ul li:hover {
+  color: white;
+}
+body footer .footer-end {
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  letter-spacing: 1.2px;
+}
+body footer .footer-end .footer-end-locationYcopyright {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  color: gray;
+  padding-left: 30px;
+}
+body footer .footer-end .footer-end-locationYcopyright .location {
+  color: white;
+  display: flex;
+  gap: 10px;
+}
+body footer .footer-end .footer-coockies {
+  padding-right: 20px;
+}
+body footer .footer-end .footer-coockies ul {
+  display: flex;
+  gap: 25px;
+}
+body footer .footer-end .footer-coockies ul li {
+  list-style: none;
+  color: gray;
+}
+body footer .footer-end .footer-coockies ul li:hover {
+  color: white;
 }
 
 .Shoe-Buy-Container {

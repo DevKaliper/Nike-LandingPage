@@ -9,71 +9,14 @@
 body {
 	background: #fefdfd;
 	position: relative;
-}
-header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	// background-color: green;
-	height: 80px;
-	padding: 35px 100px;
-	position: relative;
-	&::before {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: 0;
-		height: 100%;
-		width: 55%;
-		backdrop-filter: blur(10px);
-		background: linear-gradient(#efeff1, #eff0f2);
-	}
-
-	.logo-Container {
-		width: 100px;
-		position: relative;
-		.logo {
-			width: 100%;
-		}
-	}
-
-	.header-actions {
+	header {
 		display: flex;
+		justify-content: space-between;
 		align-items: center;
-		justify-content: center;
+		// background-color: green;
+		height: 80px;
+		padding: 35px 100px;
 		position: relative;
-		right: 50px;
-		gap: 15px;
-		ion-icon {
-			display: inline-block;
-			font-size: 1.5rem;
-			background-color: #ff802c;
-			padding: 10px;
-			border-radius: 50%;
-			color: white;
-		}
-		.menutoggle {
-			width: 50px;
-			height: 50px;
-			background-image: url("../img/menu.png");
-			background-size: 40px;
-			background-repeat: no-repeat;
-			background-position: center;
-			cursor: pointer;
-			filter: invert(1);
-		}
-	}
-}
-
-main {
-	.Shoe-Presentation {
-		height: 100vh;
-		width: 100vw;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		position: relative;
-		padding: 5px 100px;
 		&::before {
 			content: "";
 			position: absolute;
@@ -84,279 +27,479 @@ main {
 			backdrop-filter: blur(10px);
 			background: linear-gradient(#efeff1, #eff0f2);
 		}
-		&::after {
-			content: "JUST DO IT";
-			position: absolute;
-			right: 0;
-			top: 320px;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			text-align: center;
-			width: 45%;
-			height: 50%;
-			font-size: 20rem;
-			z-index: -1;
-			opacity: 0.1;
-		}
-		.logojordan {
-			position: absolute;
-			width: 30%;
-			top: -100px;
-			transform: translateX(16.6%);
-			img {
+
+		.logo-Container {
+			width: 100px;
+			position: relative;
+			.logo {
 				width: 100%;
 			}
 		}
 
-		.Presentation-content {
-			z-index: 2;
-			width: 50%;
-			h2 {
-				position: relative;
-				top: -60px;
-				font-size: 4rem;
-				letter-spacing: 1.5px;
-				span {
-					color: #ff802c;
-				}
-			}
-			p {
-				font-size: 1.3rem;
-				line-height: 2rem;
-				letter-spacing: 1.3px;
-				z-index: 2;
-				span {
-					color: #ff802c;
-				}
-			}
-		}
-
-		.Presentation-shoe-container {
-			width: 50%;
+		.header-actions {
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			position: relative;
-			height: 100%;
-
-			z-index: 1;
-
-			.Shoe-Presentation-img {
-				width: 120%;
-				position: absolute;
-				transform: rotate(-25deg);
-				top: 120px;
-				left: -180px;
-				object-fit: cover;
+			right: 50px;
+			gap: 15px;
+			ion-icon {
+				display: inline-block;
+				font-size: 1.5rem;
+				background-color: #ff802c;
+				padding: 10px;
+				border-radius: 50%;
+				color: white;
 			}
-		}
-		.ShoePresentation-Buy-Now {
-			z-index: 100;
-			position: absolute;
-			bottom: 250px;
-			right: initial;
-			font-size: 2rem;
-			padding: 5px 15px;
-			border-radius: 20px;
-			border: none;
-			background: rgb(225, 225, 225, 1);
-			box-shadow: 0 0 15px rgb(0, 0, 0, 0.3), 0 0 25px rgb(0, 0, 0, 0.1);
-
-			a {
-				&:hover {
-					letter-spacing: 2px;
-					font-size: 2.5rem;
-				}
-
-				transition: 0.5s ease;
-				text-decoration: none;
-				color: #f05423;
+			.menutoggle {
+				width: 50px;
+				height: 50px;
+				background-image: url("../img/menu.png");
+				background-size: 40px;
+				background-repeat: no-repeat;
+				background-position: center;
+				cursor: pointer;
+				filter: invert(1);
 			}
 		}
 	}
 
-
-	.Kyrie-Presentation {
-		width: 100vw;
-		height: 100vh;
-		position: relative;
-		display: flex;
-		align-items: center;
-		justify-content: flex-start;
-		.Kyrie-ballingImgContainer {
-			position: absolute;
-			top: 20px;
-			right: 300px;
-			width: 250px;
-			img {
-				width: 100%;
-			}
-		}
-		.Kyrie-imgContainer {
-			width: 55%;
-			height: 100%;
+	main {
+		.Shoe-Presentation {
+			height: 100vh;
+			width: 100vw;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 			position: relative;
-			img {
+			padding: 5px 100px;
+			&::before {
+				content: "";
 				position: absolute;
 				top: 0;
 				left: 0;
-				width: 100%;
 				height: 100%;
-				object-fit: cover;
+				width: 55%;
+				backdrop-filter: blur(10px);
+				background: linear-gradient(#efeff1, #eff0f2);
+			}
+			&::after {
+				content: "JUST DO IT";
+				position: absolute;
+				right: 0;
+				top: 320px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				text-align: center;
+				width: 45%;
+				height: 50%;
+				font-size: 20rem;
+				z-index: -1;
+				opacity: 0.1;
+			}
+			.logojordan {
+				position: absolute;
+				width: 30%;
+				top: -100px;
+				transform: translateX(16.6%);
+				img {
+					width: 100%;
+				}
+			}
+
+			.Presentation-content {
+				z-index: 2;
+				width: 50%;
+				h2 {
+					position: relative;
+					top: -60px;
+					font-size: 4rem;
+					letter-spacing: 1.5px;
+					span {
+						color: #ff802c;
+					}
+				}
+				p {
+					font-size: 1.3rem;
+					line-height: 2rem;
+					letter-spacing: 1.3px;
+					z-index: 2;
+					span {
+						color: #ff802c;
+					}
+				}
+			}
+
+			.Presentation-shoe-container {
+				width: 50%;
+				position: relative;
+				height: 100%;
+
+				z-index: 1;
+
+				.Shoe-Presentation-img {
+					width: 120%;
+					position: absolute;
+					transform: rotate(-25deg);
+					top: 120px;
+					left: -180px;
+					object-fit: cover;
+				}
+			}
+			.ShoePresentation-Buy-Now {
+				z-index: 100;
+				position: absolute;
+				bottom: 250px;
+				right: initial;
+				font-size: 2rem;
+				padding: 5px 15px;
+				border-radius: 20px;
+				border: none;
+				background: rgb(225, 225, 225, 1);
+				box-shadow: 0 0 15px rgb(0, 0, 0, 0.3), 0 0 25px rgb(0, 0, 0, 0.1);
+
+				a {
+					&:hover {
+						letter-spacing: 2px;
+						font-size: 2.5rem;
+					}
+
+					transition: 0.5s ease;
+					text-decoration: none;
+					color: #f05423;
+				}
 			}
 		}
-		.Kyrie-content {
+
+		.Kyrie-Presentation {
+			width: 100vw;
+			height: 100vh;
+			position: relative;
 			display: flex;
 			align-items: center;
-			justify-content: center;
-			flex-direction: column;
-			width: 45%;
-			height: 100%;
-			background: linear-gradient(#efeff1, #eff0f2);
-			.Kyrie-tittle {
-				font-size: 5rem;
-				position: relative;
-				top: 15px;
-				background-image: linear-gradient(to right, gray, black);
-				background-clip: text;
-				color: transparent;
+			justify-content: flex-start;
+			.Kyrie-ballingImgContainer {
+				position: absolute;
+				top: 20px;
+				right: 300px;
+				width: 250px;
+				img {
+					width: 100%;
+				}
 			}
-			.Kyrie-cities {
-				h3 {
-					font-size: 6rem;
-					background-image: linear-gradient(to right, #f8d057, #93D23B, #AF820D, #267EAC, #79ABA2, #DDAA99, #D579AA, #B5120A);
+			.Kyrie-imgContainer {
+				width: 55%;
+				height: 100%;
+				position: relative;
+				img {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+			.Kyrie-content {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+				width: 45%;
+				height: 100%;
+				background: linear-gradient(#efeff1, #eff0f2);
+				.Kyrie-tittle {
+					font-size: 5rem;
+					position: relative;
+					top: 15px;
+					background-image: linear-gradient(to right, gray, black);
 					background-clip: text;
 					color: transparent;
-					text-shadow: 0 0 75px rgba(0, 0, 0, .4) 0 0 100px white;
-					letter-spacing: 1.5px;
-					position: relative;
-					top: 45px;
-					
 				}
-				.Kyrie-city-list{
-					display: flex;
-					align-items: center;
-					justify-content: space-around;
-					position: relative;
-					top: 60px;
-					ul{
-						#Beijin{
-							background-image: linear-gradient(to right,#DF9D08, #F2550C);
-							background-clip: text;
-							color: transparent;
-						}
-
-						#Berlin{
-							background-image: linear-gradient(to right,#D780B3, #F43834);
-							background-clip: text;
-							color: transparent;
-						}
-
-						
-
-						#Houston{
-							
-							background-image: linear-gradient(to right,#BA1728, #53296F);
-							background-clip: text;
-							color: transparent;
-						}
-						#Guangzhou{
-							
-							background-image: linear-gradient(to right,#D8B732,#EC2517, #2B9AD3 );
-							background-clip: text;
-							color: transparent;
-						}
-						#Los-Angeles{
-							
-							background-image: linear-gradient(to right,#DBAB9D,#37618B );
-							background-clip: text;
-							color: transparent;
-						}
-						#Manila{
-							
-							background-image: linear-gradient(to right,#8CBCB8,#F93F12 );
-							background-clip: text;
-							color: transparent;
-						}
-						#Miami{
-							
-							background-image: linear-gradient(to right,#F5EC5F,#6BADC3, #A74178, #A74178 );
-							background-clip: text;
-							color: transparent;
-						}
-						#New-York{
-							
-							background-image: linear-gradient(to right,#2B81AD,#850B11, #76D733 );
-							background-clip: text;
-							color: transparent;
-						}
-						#Taipei{
-							
-							background-image: linear-gradient(to right,#C19415,#1D2748, #C8BD00 );
-							background-clip: text;
-							color: transparent;
-						}
-						#Tokyo{
-							
-							background-image: linear-gradient(to right,#9FD947,#E396B8, #095382 );
-							background-clip: text;
-							color: transparent;
-						}
-						
-						li{
-							list-style: none;
-							font-size: 3rem;
-							letter-spacing: 1.5px;
-							cursor: pointer;
-							transition: .5s;
-							&:hover{
-								letter-spacing: 15px;
-
+				.Kyrie-cities {
+					h3 {
+						font-size: 6rem;
+						background-image: linear-gradient(
+							to right,
+							#f8d057,
+							#93d23b,
+							#af820d,
+							#267eac,
+							#79aba2,
+							#ddaa99,
+							#d579aa,
+							#b5120a
+						);
+						background-clip: text;
+						color: transparent;
+						text-shadow: 0 0 75px rgba(0, 0, 0, 0.4) 0 0 100px white;
+						letter-spacing: 1.5px;
+						position: relative;
+						top: 45px;
+					}
+					.Kyrie-city-list {
+						display: flex;
+						align-items: center;
+						justify-content: space-around;
+						position: relative;
+						top: 60px;
+						ul {
+							#Beijin {
+								background-image: linear-gradient(to right, #df9d08, #f2550c);
+								background-clip: text;
+								color: transparent;
 							}
-							
 
+							#Berlin {
+								background-image: linear-gradient(to right, #d780b3, #f43834);
+								background-clip: text;
+								color: transparent;
+							}
+
+							#Houston {
+								background-image: linear-gradient(to right, #ba1728, #53296f);
+								background-clip: text;
+								color: transparent;
+							}
+							#Guangzhou {
+								background-image: linear-gradient(
+									to right,
+									#d8b732,
+									#ec2517,
+									#2b9ad3
+								);
+								background-clip: text;
+								color: transparent;
+							}
+							#Los-Angeles {
+								background-image: linear-gradient(to right, #dbab9d, #37618b);
+								background-clip: text;
+								color: transparent;
+							}
+							#Manila {
+								background-image: linear-gradient(to right, #8cbcb8, #f93f12);
+								background-clip: text;
+								color: transparent;
+							}
+							#Miami {
+								background-image: linear-gradient(
+									to right,
+									#f5ec5f,
+									#6badc3,
+									#a74178,
+									#a74178
+								);
+								background-clip: text;
+								color: transparent;
+							}
+							#New-York {
+								background-image: linear-gradient(
+									to right,
+									#2b81ad,
+									#850b11,
+									#76d733
+								);
+								background-clip: text;
+								color: transparent;
+							}
+							#Taipei {
+								background-image: linear-gradient(
+									to right,
+									#c19415,
+									#1d2748,
+									#c8bd00
+								);
+								background-clip: text;
+								color: transparent;
+							}
+							#Tokyo {
+								background-image: linear-gradient(
+									to right,
+									#9fd947,
+									#e396b8,
+									#095382
+								);
+								background-clip: text;
+								color: transparent;
+							}
+
+							li {
+								list-style: none;
+								font-size: 3rem;
+								letter-spacing: 1.5px;
+								cursor: pointer;
+								transition: 0.5s;
+								&:hover {
+									letter-spacing: 15px;
+								}
+							}
 						}
 					}
-					
 				}
 			}
-		}
-		.Kyrie-BallingFans-container{
-			position: absolute;
-			bottom: 20px;
-			height: fit-content;
-			width: fit-content;
-			padding: 5px 25px;
-			left: 35px;
-			border-radius: 20px;
-			background: linear-gradient(#efeff1, #eff0f2);
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			box-shadow: 0 0 20px rgb(0, 0, 0, .3);
-			a{
-				font-size: 3rem;
-				text-decoration: none;
-				color: #A09D98;
-				letter-spacing: 2px;
-				background-image: linear-gradient(to right, #f8d057, #93D23B, #AF820D, #267EAC, #79ABA2, #DDAA99, #D579AA, #B5120A);
+			.Kyrie-BallingFans-container {
+				position: absolute;
+				bottom: 20px;
+				height: fit-content;
+				width: fit-content;
+				padding: 5px 25px;
+				left: 35px;
+				border-radius: 20px;
+				background: linear-gradient(#efeff1, #eff0f2);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				box-shadow: 0 0 20px rgb(0, 0, 0, 0.3);
+				a {
+					font-size: 3rem;
+					text-decoration: none;
+					color: #a09d98;
+					letter-spacing: 2px;
+					background-image: linear-gradient(
+						to right,
+						#f8d057,
+						#93d23b,
+						#af820d,
+						#267eac,
+						#79aba2,
+						#ddaa99,
+						#d579aa,
+						#b5120a
+					);
 					background-clip: text;
 					color: transparent;
 					&:hover {
 						letter-spacing: 2.5px;
 						font-size: 3.5rem;
 					}
-	
+
 					transition: 0.5s ease;
+				}
 			}
-			
 		}
 	}
 
-	
+	footer {
+		li{
+			cursor: pointer;
+		}
+		height: auto;
+		max-width: 100vw;
+		background-color: #111;
+		.footer-text-container {
+			display: flex;
+			justify-content: space-evenly;
+			.footer-text-div {
+				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+				padding: 40px;
+				gap: 50px;
+				
+
+				span {
+					color: white;
+				}
+				.Acciones-footer {
+					li {
+						list-style: none;
+						text-transform: uppercase;
+						color: white;
+						margin-top: 15px;
+					}
+				}
+				.Help-footer {
+					li {
+						list-style: none;
+						margin-top: 15px;
+						color: gray;
+
+						&:hover {
+							color: #fff;
+						}
+					}
+				}
+				.about-footer {
+					li {
+						list-style: none;
+						margin-top: 15px;
+						color: gray;
+
+						&:hover {
+							color: #fff;
+						}
+					}
+				}
+			}
+			.sci-footer {
+				
+				ul {
+					display: flex;
+					
+					justify-content: center;
+					height:fit-content;
+					position: relative;
+					top: 40px;
+					right: 15px;
+
+					li {
+						color: gray;
+						list-style: none;
+						font-size: 2.3rem;
+						margin-right: 20px;
+					
+						height: fit-content;
+						&:hover{
+							color: white;
+						}
+					}
+				}
+			}
+		}
+		.footer-end{
+			padding-bottom: 10px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			font-size: .8rem;
+			letter-spacing: 1.2px;
+			.footer-end-locationYcopyright{
+				display: flex;
+				align-items: center;
+				gap: 30px;
+				color: gray;
+				padding-left: 30px;
+				.location{
+					color: white;
+					display: flex;
+					
+					gap: 10px;
+				}
+			}
+			.footer-coockies{
+				padding-right: 20px;
+				ul{
+					display: flex;
+					gap: 25px;
+					li{
+						list-style: none;
+						color: gray;
+						
+						
+						&:hover{
+							color: white;
+						}
+					}
+
+				}
+			}
+		}
+	}
 }
 
-
 //JordanAirBuy.html
-.Shoe-Buy-Container{
+.Shoe-Buy-Container {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -364,135 +507,135 @@ main {
 	width: 100vw;
 
 	.Shoe-Buy {
-			width: 100%;
-			height: 100%;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		position: absolute;
+		padding: 80px 0px;
+		background-image: url("../img/logodriping.png");
+
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 600px;
+		gap: 20px;
+
+		.Shoe-Buy-Tittle {
+			font-size: 4rem;
+			color: #ff802c;
+		}
+		.Shoe-Buy-card {
+			width: 700px;
+			height: 750px;
+			position: relative;
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			flex-direction: column;
-			position: absolute;
-			padding: 80px 0px;
-			background-image: url("../img/logodriping.png");
-	
-			background-repeat: no-repeat;
-			background-position: center;
-			background-size: 600px;
-			gap: 20px;
-	
-			.Shoe-Buy-Tittle {
-				font-size: 4rem;
-				color: #ff802c;
-			}
-			.Shoe-Buy-card {
-				width: 700px;
-				height: 750px;
-				position: relative;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				flex-direction: column;
-				background: rgb(225, 225, 225, 0.5);
-				box-shadow: 0 0 15px rgb(0, 0, 0, 0.3), 0 0 25px rgb(0, 0, 0, 0.1);
-				border-radius: 30px;
-				.EspecialOffer {
-					position: absolute;
-					width: 150px;
-					height: auto;
-					top: 0;
-					right: 20px;
-					img {
-						width: 100%;
-					}
-				}
-				.Shoe-Buy-initial {
+			background: rgb(225, 225, 225, 0.5);
+			box-shadow: 0 0 15px rgb(0, 0, 0, 0.3), 0 0 25px rgb(0, 0, 0, 0.1);
+			border-radius: 30px;
+			.EspecialOffer {
+				position: absolute;
+				width: 150px;
+				height: auto;
+				top: 0;
+				right: 20px;
+				img {
 					width: 100%;
-					img {
-						&:hover {
-							transform: rotate(-25deg);
-						}
-						transition: 0.5s;
-						position: relative;
-						left: 20px;
-	
-						width: 100%;
-					}
 				}
-				.Shoe-Buy-Options {
-					width: 60%;
-					height: 100%;
-					position: absolute;
-					top: -25px;
-					left: calc(-50% + 150px);
-					ul {
-						display: flex;
-						align-items: center;
-						justify-content: center;
-						flex-direction: column;
-						gap: 5px;
-						li {
-							list-style: none;
-	
-							img {
-								&:hover {
-									transform: scale(1.1);
-								}
-								transition: 0.5s;
-								background: rgb(225, 225, 225, 0.2);
-								border-radius: 15%;
-								width: 70%;
-								box-shadow: 0 0 15px rgb(0, 0, 0, 0.2);
-							}
-						}
+			}
+			.Shoe-Buy-initial {
+				width: 100%;
+				img {
+					&:hover {
+						transform: rotate(-25deg);
 					}
+					transition: 0.5s;
+					position: relative;
+					left: 20px;
+
+					width: 100%;
 				}
-				.Shoe-Buy-size {
-					ul {
-						display: flex;
-						align-items: center;
-						justify-content: center;
-						gap: 25px;
-						font-size: 2rem;
-						span {
-							color: #f05423;
-						}
-						li {
-							cursor: pointer;
-							transition: 0.5s;
-							position: relative;
-							background: #fefdfd;
-							color: #f05423;
-							padding: 3px 5px;
-							border-radius: 5px;
-							list-style: none;
-							box-shadow: 0 0 25px rgb(0, 0, 0, 0.1);
+			}
+			.Shoe-Buy-Options {
+				width: 60%;
+				height: 100%;
+				position: absolute;
+				top: -25px;
+				left: calc(-50% + 150px);
+				ul {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					flex-direction: column;
+					gap: 5px;
+					li {
+						list-style: none;
+
+						img {
 							&:hover {
-								transform: translateY(-15px);
+								transform: scale(1.1);
 							}
+							transition: 0.5s;
+							background: rgb(225, 225, 225, 0.2);
+							border-radius: 15%;
+							width: 70%;
+							box-shadow: 0 0 15px rgb(0, 0, 0, 0.2);
 						}
 					}
 				}
-				.Shoe-Buy-Now {
-					position: absolute;
-					bottom: -25px;
+			}
+			.Shoe-Buy-size {
+				ul {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					gap: 25px;
 					font-size: 2rem;
-					padding: 5px 15px;
-					border-radius: 20px;
-	
-					border: none;
-					background: rgb(225, 225, 225, 1);
-					box-shadow: 0 0 15px rgb(0, 0, 0, 0.3), 0 0 25px rgb(0, 0, 0, 0.1);
-	
-					a {
-						&:hover {
-							letter-spacing: 2px;
-							font-size: 2.5rem;
-						}
-	
-						transition: 0.5s ease;
-						text-decoration: none;
+					span {
 						color: #f05423;
 					}
+					li {
+						cursor: pointer;
+						transition: 0.5s;
+						position: relative;
+						background: #fefdfd;
+						color: #f05423;
+						padding: 3px 5px;
+						border-radius: 5px;
+						list-style: none;
+						box-shadow: 0 0 25px rgb(0, 0, 0, 0.1);
+						&:hover {
+							transform: translateY(-15px);
+						}
+					}
+				}
+			}
+			.Shoe-Buy-Now {
+				position: absolute;
+				bottom: -25px;
+				font-size: 2rem;
+				padding: 5px 15px;
+				border-radius: 20px;
+
+				border: none;
+				background: rgb(225, 225, 225, 1);
+				box-shadow: 0 0 15px rgb(0, 0, 0, 0.3), 0 0 25px rgb(0, 0, 0, 0.1);
+
+				a {
+					&:hover {
+						letter-spacing: 2px;
+						font-size: 2.5rem;
+					}
+
+					transition: 0.5s ease;
+					text-decoration: none;
+					color: #f05423;
 				}
 			}
 		}
+	}
 }
