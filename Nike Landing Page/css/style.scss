@@ -9,8 +9,6 @@
 body {
 	background: #fefdfd;
 	position: relative;
-	height: 100vh;
-	width: 100vw;
 }
 header {
 	display: flex;
@@ -19,6 +17,7 @@ header {
 	// background-color: green;
 	height: 80px;
 	padding: 35px 100px;
+	position: relative;
 	&::before {
 		content: "";
 		position: absolute;
@@ -48,7 +47,7 @@ header {
 		ion-icon {
 			display: inline-block;
 			font-size: 1.5rem;
-			background-color: #FF802C;
+			background-color: #ff802c;
 			padding: 10px;
 			border-radius: 50%;
 			color: white;
@@ -85,7 +84,7 @@ main {
 			backdrop-filter: blur(10px);
 			background: linear-gradient(#efeff1, #eff0f2);
 		}
-		&::after{
+		&::after {
 			content: "JUST DO IT";
 			position: absolute;
 			right: 0;
@@ -98,8 +97,7 @@ main {
 			height: 50%;
 			font-size: 20rem;
 			z-index: -1;
-			opacity: .1;
-			
+			opacity: 0.1;
 		}
 		.logojordan {
 			position: absolute;
@@ -120,7 +118,7 @@ main {
 				font-size: 4rem;
 				letter-spacing: 1.5px;
 				span {
-					color: #FF802C;
+					color: #ff802c;
 				}
 			}
 			p {
@@ -129,7 +127,7 @@ main {
 				letter-spacing: 1.3px;
 				z-index: 2;
 				span {
-					color: #FF802C;
+					color: #ff802c;
 				}
 			}
 		}
@@ -148,10 +146,211 @@ main {
 				top: 120px;
 				left: -180px;
 				object-fit: cover;
+			}
+		}
+		.ShoePresentation-Buy-Now {
+			z-index: 100;
+			position: absolute;
+			bottom: 250px;
+			right: initial;
+			font-size: 2rem;
+			padding: 5px 15px;
+			border-radius: 20px;
+			border: none;
+			background: rgb(225, 225, 225, 1);
+			box-shadow: 0 0 15px rgb(0, 0, 0, 0.3), 0 0 25px rgb(0, 0, 0, 0.1);
 
+			a {
+				&:hover {
+					letter-spacing: 2px;
+					font-size: 2.5rem;
+				}
+
+				transition: 0.5s ease;
+				text-decoration: none;
+				color: #f05423;
 			}
 		}
 	}
+
+
+	.Kyrie-Presentation {
+		width: 100vw;
+		height: 100vh;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		.Kyrie-ballingImgContainer {
+			position: absolute;
+			top: 20px;
+			right: 300px;
+			width: 250px;
+			img {
+				width: 100%;
+			}
+		}
+		.Kyrie-imgContainer {
+			width: 55%;
+			height: 100%;
+			position: relative;
+			img {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+		.Kyrie-content {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			width: 45%;
+			height: 100%;
+			background: linear-gradient(#efeff1, #eff0f2);
+			.Kyrie-tittle {
+				font-size: 5rem;
+				position: relative;
+				top: 15px;
+				background-image: linear-gradient(to right, gray, black);
+				background-clip: text;
+				color: transparent;
+			}
+			.Kyrie-cities {
+				h3 {
+					font-size: 6rem;
+					background-image: linear-gradient(to right, #f8d057, #93D23B, #AF820D, #267EAC, #79ABA2, #DDAA99, #D579AA, #B5120A);
+					background-clip: text;
+					color: transparent;
+					text-shadow: 0 0 75px rgba(0, 0, 0, .4) 0 0 100px white;
+					letter-spacing: 1.5px;
+					position: relative;
+					top: 45px;
+					
+				}
+				.Kyrie-city-list{
+					display: flex;
+					align-items: center;
+					justify-content: space-around;
+					position: relative;
+					top: 60px;
+					ul{
+						#Beijin{
+							background-image: linear-gradient(to right,#DF9D08, #F2550C);
+							background-clip: text;
+							color: transparent;
+						}
+
+						#Berlin{
+							background-image: linear-gradient(to right,#D780B3, #F43834);
+							background-clip: text;
+							color: transparent;
+						}
+
+						
+
+						#Houston{
+							
+							background-image: linear-gradient(to right,#BA1728, #53296F);
+							background-clip: text;
+							color: transparent;
+						}
+						#Guangzhou{
+							
+							background-image: linear-gradient(to right,#D8B732,#EC2517, #2B9AD3 );
+							background-clip: text;
+							color: transparent;
+						}
+						#Los-Angeles{
+							
+							background-image: linear-gradient(to right,#DBAB9D,#37618B );
+							background-clip: text;
+							color: transparent;
+						}
+						#Manila{
+							
+							background-image: linear-gradient(to right,#8CBCB8,#F93F12 );
+							background-clip: text;
+							color: transparent;
+						}
+						#Miami{
+							
+							background-image: linear-gradient(to right,#F5EC5F,#6BADC3, #A74178, #A74178 );
+							background-clip: text;
+							color: transparent;
+						}
+						#New-York{
+							
+							background-image: linear-gradient(to right,#2B81AD,#850B11, #76D733 );
+							background-clip: text;
+							color: transparent;
+						}
+						#Taipei{
+							
+							background-image: linear-gradient(to right,#C19415,#1D2748, #C8BD00 );
+							background-clip: text;
+							color: transparent;
+						}
+						#Tokyo{
+							
+							background-image: linear-gradient(to right,#9FD947,#E396B8, #095382 );
+							background-clip: text;
+							color: transparent;
+						}
+						
+						li{
+							list-style: none;
+							font-size: 3rem;
+							letter-spacing: 1.5px;
+							cursor: pointer;
+							transition: .5s;
+							&:hover{
+								letter-spacing: 15px;
+
+							}
+							
+
+						}
+					}
+					
+				}
+			}
+		}
+		.Kyrie-BallingFans-container{
+			position: absolute;
+			bottom: 20px;
+			height: fit-content;
+			width: fit-content;
+			padding: 5px 25px;
+			left: 35px;
+			border-radius: 20px;
+			background: linear-gradient(#efeff1, #eff0f2);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			box-shadow: 0 0 20px rgb(0, 0, 0, .3);
+			a{
+				font-size: 3rem;
+				text-decoration: none;
+				color: #A09D98;
+				letter-spacing: 2px;
+				background-image: linear-gradient(to right, #f8d057, #93D23B, #AF820D, #267EAC, #79ABA2, #DDAA99, #D579AA, #B5120A);
+					background-clip: text;
+					color: transparent;
+					&:hover {
+						letter-spacing: 2.5px;
+						font-size: 3.5rem;
+					}
+	
+					transition: 0.5s ease;
+			}
+			
+		}
+	}
+
 	.Shoe-Buy {
 		width: 100%;
 		height: 100%;
@@ -170,7 +369,7 @@ main {
 
 		.Shoe-Buy-Tittle {
 			font-size: 4rem;
-			color: #FF802C;
+			color: #ff802c;
 		}
 		.Shoe-Buy-card {
 			width: 700px;
@@ -196,10 +395,10 @@ main {
 			.Shoe-Buy-initial {
 				width: 100%;
 				img {
-					&:hover{
+					&:hover {
 						transform: rotate(-25deg);
 					}
-					transition: .5s;
+					transition: 0.5s;
 					position: relative;
 					left: 20px;
 
@@ -222,10 +421,10 @@ main {
 						list-style: none;
 
 						img {
-							&:hover{
+							&:hover {
 								transform: scale(1.1);
 							}
-							transition: .5s;
+							transition: 0.5s;
 							background: rgb(225, 225, 225, 0.2);
 							border-radius: 15%;
 							width: 70%;
@@ -242,21 +441,20 @@ main {
 					gap: 25px;
 					font-size: 2rem;
 					span {
-						color: #F05423;
+						color: #f05423;
 					}
 					li {
 						cursor: pointer;
-						transition: .5s;
+						transition: 0.5s;
 						position: relative;
 						background: #fefdfd;
-						color: #F05423;
+						color: #f05423;
 						padding: 3px 5px;
 						border-radius: 5px;
 						list-style: none;
 						box-shadow: 0 0 25px rgb(0, 0, 0, 0.1);
-						&:hover{
+						&:hover {
 							transform: translateY(-15px);
-	
 						}
 					}
 				}
@@ -267,20 +465,20 @@ main {
 				font-size: 2rem;
 				padding: 5px 15px;
 				border-radius: 20px;
-				
+
 				border: none;
 				background: rgb(225, 225, 225, 1);
 				box-shadow: 0 0 15px rgb(0, 0, 0, 0.3), 0 0 25px rgb(0, 0, 0, 0.1);
-				
+
 				a {
-					&:hover{
+					&:hover {
 						letter-spacing: 2px;
 						font-size: 2.5rem;
 					}
-					
-					transition: .5s ease;
+
+					transition: 0.5s ease;
 					text-decoration: none;
-					color: #F05423;
+					color: #f05423;
 				}
 			}
 		}
