@@ -145,6 +145,27 @@ main .Shoe-Presentation .Presentation-shoe-container .Shoe-Presentation-img {
   -o-object-fit: cover;
      object-fit: cover;
 }
+main .Shoe-Presentation .ShoePresentation-Buy-Now {
+  z-index: 100;
+  position: absolute;
+  bottom: 250px;
+  right: initial;
+  font-size: 2rem;
+  padding: 5px 15px;
+  border-radius: 20px;
+  border: none;
+  background: rgb(225, 225, 225);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3), 0 0 25px rgba(0, 0, 0, 0.1);
+}
+main .Shoe-Presentation .ShoePresentation-Buy-Now a {
+  transition: 0.5s ease;
+  text-decoration: none;
+  color: #f05423;
+}
+main .Shoe-Presentation .ShoePresentation-Buy-Now a:hover {
+  letter-spacing: 2px;
+  font-size: 2.5rem;
+}
 main .Kyrie-Presentation {
   width: 100vw;
   height: 100vh;
@@ -212,6 +233,66 @@ main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list {
   position: relative;
   top: 60px;
 }
+main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list ul #Beijin {
+  background-image: linear-gradient(to right, #DF9D08, #F2550C);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list ul #Berlin {
+  background-image: linear-gradient(to right, #D780B3, #F43834);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list ul #Houston {
+  background-image: linear-gradient(to right, #BA1728, #53296F);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list ul #Guangzhou {
+  background-image: linear-gradient(to right, #D8B732, #EC2517, #2B9AD3);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list ul #Los-Angeles {
+  background-image: linear-gradient(to right, #DBAB9D, #37618B);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list ul #Manila {
+  background-image: linear-gradient(to right, #8CBCB8, #F93F12);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list ul #Miami {
+  background-image: linear-gradient(to right, #F5EC5F, #6BADC3, #A74178, #A74178);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list ul #New-York {
+  background-image: linear-gradient(to right, #2B81AD, #850B11, #76D733);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list ul #Taipei {
+  background-image: linear-gradient(to right, #C19415, #1D2748, #C8BD00);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list ul #Tokyo {
+  background-image: linear-gradient(to right, #9FD947, #E396B8, #095382);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
 main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list ul li {
   list-style: none;
   font-size: 3rem;
@@ -221,6 +302,37 @@ main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list ul li {
 }
 main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list ul li:hover {
   letter-spacing: 15px;
+}
+main .Kyrie-Presentation .Kyrie-BallingFans-container {
+  position: absolute;
+  bottom: 20px;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 25px;
+  left: 35px;
+  border-radius: 20px;
+  background: linear-gradient(#efeff1, #eff0f2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+main .Kyrie-Presentation .Kyrie-BallingFans-container a {
+  font-size: 3rem;
+  text-decoration: none;
+  color: #A09D98;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #f8d057, #93D23B, #AF820D, #267EAC, #79ABA2, #DDAA99, #D579AA, #B5120A);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  transition: 0.5s ease;
+}
+main .Kyrie-Presentation .Kyrie-BallingFans-container a:hover {
+  letter-spacing: 2.5px;
+  font-size: 3.5rem;
 }
 main .Shoe-Buy {
   width: 100%;
