@@ -7,7 +7,7 @@
 }
 
 body {
-	background: #fefdfd;
+	background: linear-gradient(to top,#EFF0F2, white );
 	position: relative;
 	header {
 		display: flex;
@@ -33,6 +33,7 @@ body {
 			position: relative;
 			.logo {
 				width: 100%;
+				cursor: pointer;
 			}
 		}
 
@@ -50,6 +51,7 @@ body {
 				padding: 10px;
 				border-radius: 50%;
 				color: white;
+				cursor: pointer;
 			}
 			.menutoggle {
 				width: 50px;
@@ -60,6 +62,98 @@ body {
 				background-position: center;
 				cursor: pointer;
 				filter: invert(1);
+				z-index: 10000000000;
+				&.active {
+					width: 50px;
+					height: 50px;
+					background-size: 40px;
+					background-repeat: no-repeat;
+					background-position: center;
+					position: fixed;
+					background-image: url("../img/close.png");
+					filter: invert(1);
+					position: relative;
+					right: 20px;
+					top: 20px;
+					z-index: 10000000000;
+				}
+			}
+		}
+		.menuActions {
+			position: absolute;
+			top: 0;
+			left: 0;
+			opacity: 0;
+			visibility: hidden;
+			&.active {
+				position: fixed;
+				width: 100%;
+				height: 100%;
+				opacity: 1;
+				visibility: visible;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background-color: white;
+				z-index: 100000;
+				ul {
+					li {
+						list-style: none;
+						margin-top: 10px;
+						width: fit-content;
+						height: fit-content;
+						pad: 5px;
+						&:nth-child(1) {
+							&:hover {
+								a {
+									color: #ff802c;
+								}
+							}
+						}
+						&:nth-child(2) {
+							&:hover {
+								a {
+									background-image: linear-gradient(
+										to right,
+										#f8d057,
+										#93d23b,
+										#af820d,
+										#267eac,
+										#79aba2,
+										#ddaa99,
+										#d579aa,
+										#b5120a
+									);
+									background-clip: text;
+									color: transparent;
+								}
+							}
+						}
+
+						&:nth-child(3) {
+							&:hover {
+								a {
+									color: gray;
+								}
+							}
+						}
+						&:nth-child(4) {
+							&:hover {
+								a {
+									color: #AC1524;
+								}
+							}
+						}
+						a {
+							color: black;
+							letter-spacing: 1.5px;
+							font-size: 6rem;
+							margin-top: 50px;
+							text-decoration: none;
+							
+						}
+					}
+				}
 			}
 		}
 	}
@@ -72,17 +166,6 @@ body {
 			justify-content: center;
 			align-items: center;
 			position: relative;
-			padding: 5px 100px;
-			&::before {
-				content: "";
-				position: absolute;
-				top: 0;
-				left: 0;
-				height: 100%;
-				width: 55%;
-				backdrop-filter: blur(10px);
-				background: linear-gradient(#efeff1, #eff0f2);
-			}
 			&::after {
 				content: "JUST DO IT";
 				position: absolute;
@@ -97,20 +180,30 @@ body {
 				font-size: 20rem;
 				z-index: -1;
 				opacity: 0.1;
+				background: transparent;
 			}
 			.logojordan {
 				position: absolute;
-				width: 30%;
+				width: 400px;
 				top: -100px;
-				transform: translateX(16.6%);
+				transform: translateX(24%);
+				z-index: 1;
+
 				img {
 					width: 100%;
 				}
 			}
 
 			.Presentation-content {
-				z-index: 2;
-				width: 50%;
+				z-index: -1;
+				height: 100%;
+				width: 55%;
+				padding: 5px 100px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+				background: linear-gradient(#efeff1, #eff0f2);
 				h2 {
 					position: relative;
 					top: -60px;
@@ -132,17 +225,17 @@ body {
 			}
 
 			.Presentation-shoe-container {
-				width: 50%;
+				width: 45%;
 				position: relative;
 				height: 100%;
 
 				z-index: 1;
 
 				.Shoe-Presentation-img {
-					width: 120%;
-					position: absolute;
+					width: 100%;
+					position: relative;
 					transform: rotate(-25deg);
-					top: 120px;
+					top: 180px;
 					left: -180px;
 					object-fit: cover;
 				}
@@ -179,6 +272,26 @@ body {
 			display: flex;
 			align-items: center;
 			justify-content: flex-start;
+			// &::before{
+			// 	position: absolute;
+			// 	content: "";
+			// 	top: 0;
+			// 	right: 0;
+			// 	height: 15%;
+			// 	width: 100%;
+			// 	z-index: 0;
+			// 	background: linear-gradient(to bottom, gray, transparent);
+			// }
+			&::after{
+				position: absolute;
+				content: "";
+				bottom: 0;
+				right: 0;
+				height: 15%;
+				width: 100%;
+				z-index: 0;
+				background: linear-gradient(to top, gray, transparent);
+			}
 			.Kyrie-ballingImgContainer {
 				position: absolute;
 				top: 20px;
@@ -208,7 +321,7 @@ body {
 				flex-direction: column;
 				width: 45%;
 				height: 100%;
-				background: linear-gradient(#efeff1, #eff0f2);
+				background:#FAFBFB;
 				.Kyrie-tittle {
 					font-size: 5rem;
 					position: relative;
@@ -218,6 +331,7 @@ body {
 					color: transparent;
 				}
 				.Kyrie-cities {
+					z-index: 100000;
 					h3 {
 						font-size: 6rem;
 						background-image: linear-gradient(
@@ -339,6 +453,7 @@ body {
 				}
 			}
 			.Kyrie-BallingFans-container {
+				z-index: 10000;
 				position: absolute;
 				bottom: 20px;
 				height: fit-content;
@@ -381,7 +496,7 @@ body {
 	}
 
 	footer {
-		li{
+		li {
 			cursor: pointer;
 		}
 		height: auto;
@@ -396,7 +511,6 @@ body {
 				flex-wrap: wrap;
 				padding: 40px;
 				gap: 50px;
-				
 
 				span {
 					color: white;
@@ -433,12 +547,11 @@ body {
 				}
 			}
 			.sci-footer {
-				
 				ul {
 					display: flex;
-					
+
 					justify-content: center;
-					height:fit-content;
+					height: fit-content;
 					position: relative;
 					top: 40px;
 					right: 15px;
@@ -448,50 +561,48 @@ body {
 						list-style: none;
 						font-size: 2.3rem;
 						margin-right: 20px;
-					
+
 						height: fit-content;
-						&:hover{
+						&:hover {
 							color: white;
 						}
 					}
 				}
 			}
 		}
-		.footer-end{
+		.footer-end {
 			padding-bottom: 10px;
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			font-size: .8rem;
+			font-size: 0.8rem;
 			letter-spacing: 1.2px;
-			.footer-end-locationYcopyright{
+			.footer-end-locationYcopyright {
 				display: flex;
 				align-items: center;
 				gap: 30px;
 				color: gray;
 				padding-left: 30px;
-				.location{
+				.location {
 					color: white;
 					display: flex;
-					
+
 					gap: 10px;
 				}
 			}
-			.footer-coockies{
+			.footer-coockies {
 				padding-right: 20px;
-				ul{
+				ul {
 					display: flex;
 					gap: 25px;
-					li{
+					li {
 						list-style: none;
 						color: gray;
-						
-						
-						&:hover{
+
+						&:hover {
 							color: white;
 						}
 					}
-
 				}
 			}
 		}

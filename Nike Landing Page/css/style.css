@@ -7,7 +7,7 @@
 }
 
 body {
-  background: #fefdfd;
+  background: linear-gradient(to top, #EFF0F2, white);
   position: relative;
 }
 body header {
@@ -35,6 +35,7 @@ body header .logo-Container {
 }
 body header .logo-Container .logo {
   width: 100%;
+  cursor: pointer;
 }
 body header .header-actions {
   display: flex;
@@ -51,6 +52,7 @@ body header .header-actions ion-icon {
   padding: 10px;
   border-radius: 50%;
   color: white;
+  cursor: pointer;
 }
 body header .header-actions .menutoggle {
   width: 50px;
@@ -61,6 +63,71 @@ body header .header-actions .menutoggle {
   background-position: center;
   cursor: pointer;
   filter: invert(1);
+  z-index: 10000000000;
+}
+body header .header-actions .menutoggle.active {
+  width: 50px;
+  height: 50px;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed;
+  background-image: url("../img/close.png");
+  filter: invert(1);
+  position: relative;
+  right: 20px;
+  top: 20px;
+  z-index: 10000000000;
+}
+body header .menuActions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+body header .menuActions.active {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  visibility: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  z-index: 100000;
+}
+body header .menuActions.active ul li {
+  list-style: none;
+  margin-top: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  pad: 5px;
+}
+body header .menuActions.active ul li:nth-child(1):hover a {
+  color: #ff802c;
+}
+body header .menuActions.active ul li:nth-child(2):hover a {
+  background-image: linear-gradient(to right, #f8d057, #93d23b, #af820d, #267eac, #79aba2, #ddaa99, #d579aa, #b5120a);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+body header .menuActions.active ul li:nth-child(3):hover a {
+  color: gray;
+}
+body header .menuActions.active ul li:nth-child(4):hover a {
+  color: #AC1524;
+}
+body header .menuActions.active ul li a {
+  color: black;
+  letter-spacing: 1.5px;
+  font-size: 6rem;
+  margin-top: 50px;
+  text-decoration: none;
 }
 body main .Shoe-Presentation {
   height: 100vh;
@@ -69,18 +136,6 @@ body main .Shoe-Presentation {
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 5px 100px;
-}
-body main .Shoe-Presentation::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 55%;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  background: linear-gradient(#efeff1, #eff0f2);
 }
 body main .Shoe-Presentation::after {
   content: "JUST DO IT";
@@ -96,19 +151,28 @@ body main .Shoe-Presentation::after {
   font-size: 20rem;
   z-index: -1;
   opacity: 0.1;
+  background: transparent;
 }
 body main .Shoe-Presentation .logojordan {
   position: absolute;
-  width: 30%;
+  width: 400px;
   top: -100px;
-  transform: translateX(16.6%);
+  transform: translateX(24%);
+  z-index: 1;
 }
 body main .Shoe-Presentation .logojordan img {
   width: 100%;
 }
 body main .Shoe-Presentation .Presentation-content {
-  z-index: 2;
-  width: 50%;
+  z-index: -1;
+  height: 100%;
+  width: 55%;
+  padding: 5px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(#efeff1, #eff0f2);
 }
 body main .Shoe-Presentation .Presentation-content h2 {
   position: relative;
@@ -129,16 +193,16 @@ body main .Shoe-Presentation .Presentation-content p span {
   color: #ff802c;
 }
 body main .Shoe-Presentation .Presentation-shoe-container {
-  width: 50%;
+  width: 45%;
   position: relative;
   height: 100%;
   z-index: 1;
 }
 body main .Shoe-Presentation .Presentation-shoe-container .Shoe-Presentation-img {
-  width: 120%;
-  position: absolute;
+  width: 100%;
+  position: relative;
   transform: rotate(-25deg);
-  top: 120px;
+  top: 180px;
   left: -180px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -172,6 +236,16 @@ body main .Kyrie-Presentation {
   align-items: center;
   justify-content: flex-start;
 }
+body main .Kyrie-Presentation::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: 0;
+  height: 15%;
+  width: 100%;
+  z-index: 0;
+  background: linear-gradient(to top, gray, transparent);
+}
 body main .Kyrie-Presentation .Kyrie-ballingImgContainer {
   position: absolute;
   top: 20px;
@@ -202,7 +276,7 @@ body main .Kyrie-Presentation .Kyrie-content {
   flex-direction: column;
   width: 45%;
   height: 100%;
-  background: linear-gradient(#efeff1, #eff0f2);
+  background: #FAFBFB;
 }
 body main .Kyrie-Presentation .Kyrie-content .Kyrie-tittle {
   font-size: 5rem;
@@ -212,6 +286,9 @@ body main .Kyrie-Presentation .Kyrie-content .Kyrie-tittle {
   -webkit-background-clip: text;
           background-clip: text;
   color: transparent;
+}
+body main .Kyrie-Presentation .Kyrie-content .Kyrie-cities {
+  z-index: 100000;
 }
 body main .Kyrie-Presentation .Kyrie-content .Kyrie-cities h3 {
   font-size: 6rem;
@@ -302,6 +379,7 @@ body main .Kyrie-Presentation .Kyrie-content .Kyrie-cities .Kyrie-city-list ul l
   letter-spacing: 15px;
 }
 body main .Kyrie-Presentation .Kyrie-BallingFans-container {
+  z-index: 10000;
   position: absolute;
   bottom: 20px;
   height: -moz-fit-content;
